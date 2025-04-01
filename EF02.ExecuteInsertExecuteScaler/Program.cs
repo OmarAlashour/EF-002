@@ -9,8 +9,8 @@ var configuration = new ConfigurationBuilder()
 // read from user input
 var walletToInsert = new Wallet
 {
-    Holder = "Salah",
-    Balance = 4500
+    Holder = "Ali",
+    Balance = 6000
 };
 
 SqlConnection conn = new SqlConnection(configuration.GetSection("constr").Value);

@@ -18,10 +18,10 @@ command.Transaction = transaction;
 
 try
 {
-    command.CommandText = "UPDATE Wallets Set Balance = Balance - 1000 Where Id = 2";
+    command.CommandText = "UPDATE Wallets Set Balance = Balance - 1000 Where Id = 12";
     command.ExecuteNonQuery();
 
-    command.CommandText = "UPDATE Wallets Set Balance = Balance + 1000 Where Id = 3";
+    command.CommandText = "UPDATE Wallets Set Balance = Balance + 1000 Where Id = 8";
     command.ExecuteNonQuery();
 
     transaction.Commit();

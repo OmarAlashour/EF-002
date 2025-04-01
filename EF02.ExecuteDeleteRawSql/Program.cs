@@ -17,7 +17,7 @@ SqlParameter idParameter = new SqlParameter
     ParameterName = "@Id",
     SqlDbType = SqlDbType.Int,
     Direction = ParameterDirection.Input,
-    Value = 1,
+    Value = 7,
 };
 
 SqlCommand command = new SqlCommand(sql, conn);

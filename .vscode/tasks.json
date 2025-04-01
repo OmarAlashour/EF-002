@@ -10,10 +10,6 @@
                 "${workspaceFolder}/EF02.ConnectionString/EF02.ConnectionString.csproj",
             ],
             "problemMatcher": "$msCompile",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         },
         {
             "label": "build EF02.ExecuteRawSql",
@@ -44,6 +40,10 @@
                 "${workspaceFolder}/EF02.ExecuteTransaction/EF02.ExecuteTransaction.csproj",
             ],
             "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "build EF02.ExecuteUpdateRawSql",
@@ -76,12 +76,12 @@
             "problemMatcher": "$msCompile",
         },
         {
-            "label": "build EF02.ExecuteInsertExecuteScalar",
+            "label": "build EF02.ExecuteInsertExecuteScaler",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/EF02.ExecuteInsertExecuteScalar/EF02.ExecuteInsertExecuteScalar.csproj",
+                "${workspaceFolder}/EF02.ExecuteInsertExecuteScaler/EF02.ExecuteInsertExecuteScaler.csproj",
             ],
             "problemMatcher": "$msCompile",
         },

@@ -16,14 +16,14 @@ SqlParameter idParameter = new SqlParameter
     ParameterName = "@Id",
     SqlDbType = SqlDbType.Int,
     Direction = ParameterDirection.Input,
-    Value = 1,
+    Value = 12,
 };
 SqlParameter holderParameter = new SqlParameter
 {
     ParameterName = "@Holder",
     SqlDbType = SqlDbType.VarChar,
     Direction = ParameterDirection.Input,
-    Value = "Ahmed",
+    Value = "Mohanned",
 };
 
 SqlParameter balanceParameter = new SqlParameter
@@ -31,7 +31,7 @@ SqlParameter balanceParameter = new SqlParameter
     ParameterName = "@Balance",
     SqlDbType = SqlDbType.Decimal,
     Direction = ParameterDirection.Input,
-    Value = 9000,
+    Value = 50000,
 };
 
 SqlCommand command = new SqlCommand(sql, conn);
