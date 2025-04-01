@@ -3,48 +3,36 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Data;
 
-namespace EF02.ExecuteDeleteRawSql
+var configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+SqlConnection conn = new SqlConnection(configuration.GetSection("constr").Value);
+
+var sql = "DELETE FROM Wallets " +
+    $"WHERE Id = @Id";
+
+SqlParameter idParameter = new SqlParameter
 {
-    class Program
-    {
-        public static void Main()
-        {
-            var configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
-                .Build();
-        
+    ParameterName = "@Id",
+    SqlDbType = SqlDbType.Int,
+    Direction = ParameterDirection.Input,
+    Value = 1,
+};
 
-            SqlConnection conn = new SqlConnection(configuration.GetSection("constr").Value);
-            
-            var sql = "DELETE FROM Wallets " +
-                $"WHERE Id = @Id";
+SqlCommand command = new SqlCommand(sql, conn);
 
-            SqlParameter idParameter = new SqlParameter
-            {
-                ParameterName = "@Id",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = 1,
-            };
-         
+command.Parameters.Add(idParameter);
 
-            SqlCommand command = new SqlCommand(sql, conn);
+command.CommandType = CommandType.Text;
 
-            command.Parameters.Add(idParameter);
+conn.Open();
 
-            command.CommandType = CommandType.Text;
-
-            conn.Open();
-
-            if (command.ExecuteNonQuery() > 0)
-            {
-                Console.WriteLine($"wallet deleted successully");
-            }
-            
-
-            conn.Close();
-
-            Console.ReadKey();
-        }
-    }
+if (command.ExecuteNonQuery() > 0)
+{
+    Console.WriteLine($"wallet deleted successully");
 }
+
+conn.Close();
+
+Console.ReadKey();
