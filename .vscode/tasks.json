@@ -1,0 +1,99 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build EF02.ConnectionString",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ConnectionString/EF02.ConnectionString.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build EF02.ExecuteRawSql",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteRawSql/EF02.ExecuteRawSql.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteRawSqlDataAdapter",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteRawSqlDataAdapter/EF02.ExecuteRawSqlDataAdapter.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteTransaction",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteTransaction/EF02.ExecuteTransaction.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteUpdateRawSql",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteUpdateRawSql/EF02.ExecuteUpdateRawSql.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteDeleteRawSql",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteDeleteRawSql/EF02.ExecuteDeleteRawSql.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteInsertStoredProcedure",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteInsertStoredProcedure/EF02.ExecuteInsertStoredProcedure.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteInsertExecuteScalar",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteInsertExecuteScalar/EF02.ExecuteInsertExecuteScalar.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build EF02.ExecuteInsertRawSql",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/EF02.ExecuteInsertRawSql/EF02.ExecuteInsertRawSql.csproj",
+            ],
+            "problemMatcher": "$msCompile",
+        },
+    ]
+}

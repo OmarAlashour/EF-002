@@ -1,0 +1,130 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
+            "name": ".NET Core Launch (EF02.ConnectionString)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ConnectionString",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ConnectionString/bin/Debug/net9.0/EF02.ConnectionString.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ConnectionString",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteRawSql)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteRawSql",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteRawSql/bin/Debug/net9.0/EF02.ExecuteRawSql.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteRawSql",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteRawSqlDataAdapter)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteRawSqlDataAdapter",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteRawSqlDataAdapter/bin/Debug/net9.0/EF02.ExecuteRawSqlDataAdapter.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteRawSqlDataAdapter",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteDeleteRawSql)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteDeleteRawSql",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteDeleteRawSql/bin/Debug/net9.0/EF02.ExecuteDeleteRawSql.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteDeleteRawSql",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteInsertStoredProcedure)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteInsertStoredProcedure",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteInsertStoredProcedure/bin/Debug/net9.0/EF02.ExecuteInsertStoredProcedure.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteInsertStoredProcedure",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteInsertRawSql)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteInsertRawSql",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteInsertRawSql/bin/Debug/net9.0/EF02.ExecuteInsertRawSql.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteInsertRawSql",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteInsertExecuteScaler)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteInsertExecuteScaler",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteInsertExecuteScaler/bin/Debug/net9.0/EF02.ExecuteInsertExecuteScaler.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteInsertExecuteScaler",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteTransaction)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteTransaction",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteTransaction/bin/Debug/net9.0/EF02.ExecuteTransaction.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteTransaction",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch (EF02.ExecuteUpdateRawSql)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build EF02.ExecuteUpdateRawSql",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/EF02.ExecuteUpdateRawSql/bin/Debug/net9.0/EF02.ExecuteUpdateRawSql.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EF02.ExecuteUpdateRawSql",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

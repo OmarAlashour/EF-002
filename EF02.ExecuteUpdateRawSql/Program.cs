@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Data;
 
 namespace EF02.ExecuteUpdateRawSql
@@ -51,15 +50,26 @@ namespace EF02.ExecuteUpdateRawSql
 
             command.CommandType = CommandType.Text;
 
-            conn.Open();
-
-            if (command.ExecuteNonQuery() > 0)
+            try
             {
-                Console.WriteLine($"wallet for updated successully");
+                conn.Open();
+                if (command.ExecuteNonQuery() > 0)
+                {
+                    Console.WriteLine("Wallet updated successfully");
+                }
+                else
+                {
+                    Console.WriteLine("No rows were updated. Check if the row with Id = 1 exists.");
+                }
             }
-            
-
-            conn.Close();
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
 
             Console.ReadKey();
         }
